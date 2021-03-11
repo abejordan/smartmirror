@@ -19,7 +19,8 @@ export default {
     };
   },
   created() {
-    axios.get("http://api.openweathermap.org/data/2.5/weather?q=Indianapolis&units=Imperial&appid=60c4d8818723401b5fad506c8226d9d2").then((current) => {
+    let api_key = process.env.VUE_APP_WEATHER_API_KEY
+    axios.get("http://api.openweathermap.org/data/2.5/weather?q=Indianapolis&units=Imperial&appid="+api_key+"").then((current) => {
       this.currentWeather = current.data;
       console.log(current);
     });
