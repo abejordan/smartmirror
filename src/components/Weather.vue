@@ -48,7 +48,7 @@ export default {
     let api_key = process.env.VUE_APP_WEATHER_API_KEY;
     axios
       .get(
-        "http://api.openweathermap.org/data/2.5/onecall?lat=39.791&lon=-86.148003&exclude=hourly&units=imperial&appid=" +
+        "https://api.openweathermap.org/data/2.5/onecall?lat=39.791&lon=-86.148003&exclude=hourly&units=imperial&appid=" +
           api_key +
           ""
       )
