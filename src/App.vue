@@ -3,6 +3,7 @@
     <div class="grid grid-cols-3 gap-4 p-12">
     <Weather />
     <Time />
+    <hr>
     <News />
     </div>
   </div>
